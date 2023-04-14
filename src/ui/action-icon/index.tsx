@@ -10,7 +10,7 @@ const actionIcon = cva(
         primary:
           "bg-blue-500 border-blue-600 hover:border-blue-700 hover:bg-blue-600 text-white",
         subtle:
-          "border-none bg-transparent hover:bg-stone-50 text-stone-600 hover:text-stone-800",
+          "border-none bg-transparent hover:bg-stone-200 text-stone-700 hover:text-stone-800",
       },
       size: {
         sm: "w-6 h-6 p-1",
