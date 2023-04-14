@@ -74,7 +74,7 @@ function Todo(props: {
       <label class="w-full text-lg md:text-base" for={id}>
         {todo.text}
       </label>
-      <div class="opacity-100 md:opacity-0 group-hover:opacity-100">
+      <div>
         <ActionIcon
           variant="subtle"
           size="sm"

@@ -9,8 +9,7 @@ const actionIcon = cva(
       variant: {
         primary:
           "bg-blue-500 border-blue-600 hover:border-blue-700 hover:bg-blue-600 text-white",
-        subtle:
-          "border-none bg-transparent hover:bg-stone-200 text-stone-700 hover:text-stone-800",
+        subtle: "border-none text-black/50 hover:text-black/75",
       },
       size: {
         sm: "w-6 h-6 p-1",
@@ -24,7 +23,6 @@ const actionIcon = cva(
         full: "rounded-full",
       },
     },
-    compoundVariants: [{ variant: "primary", size: "md", radius: "sm" }],
     defaultVariants: {
       variant: "primary",
       size: "md",
