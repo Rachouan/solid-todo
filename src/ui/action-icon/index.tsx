@@ -3,7 +3,7 @@ import { JSX, splitProps } from "solid-js";
 import { Dynamic } from "solid-js/web";
 
 const actionIcon = cva(
-  "text-white font-medium rounded border disabled:bg-stone-200 disabled:text-stone-600 transition-all",
+  "font-medium rounded border disabled:bg-stone-200 disabled:text-stone-600 transition-all",
   {
     variants: {
       variant: {
