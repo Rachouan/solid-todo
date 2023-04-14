@@ -59,16 +59,19 @@ function Todo(props: {
     "removeTodo",
   ]);
 
+  const id = `todo-item-${todo.id}`;
+
   return (
     <div class="group flex gap-2 items-center relative py-2 px-3 rounded hover:bg-stone-100">
       <input
+        id={id}
         type="checkbox"
         checked={todo.done}
         onChange={() => toggleTodo(todo.id)}
         class="w-6 h-6 md:w-4 md:h-4 text-blue-500"
       />
 
-      <label class="w-full text-lg md:text-base" for="">
+      <label class="w-full text-lg md:text-base" for={id}>
         {todo.text}
       </label>
       <div class="opacity-100 md:opacity-0 group-hover:opacity-100">
