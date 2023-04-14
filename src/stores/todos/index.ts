@@ -10,6 +10,7 @@ const [todos, setTodos] = createLocalStore<Todo[]>("local-todos", []);
 
 export const useTodos = () => {
   const addTodo = (text: string) => {
+    if (!text) return;
     setTodos((todos) => [...todos, { id: Date.now(), text, done: false }]);
   };
 
@@ -23,5 +24,9 @@ export const useTodos = () => {
     });
   };
 
-  return { todos, addTodo, toggleTodo };
+  const removeTodo = (id: number) => {
+    setTodos((todos) => todos.filter((todo) => todo.id !== id));
+  };
+
+  return { todos, addTodo, toggleTodo, removeTodo };
 };
